@@ -1,0 +1,268 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <main class="main">
+        <div class="intro-slider-container">
+            <div class="intro-slider owl-carousel owl-theme owl-nav-inside owl-light" data-toggle="owl"
+                 data-owl-options='{
+                        "dots": false,
+                        "nav": false, 
+                        "responsive": {
+                            "992": {
+                                "nav": true
+                            }
+                        }
+                    }'>
+                <div class="intro-slide" style="background-image:
+                        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+                        url({% static 'assets/images/demos/demo-6/slider/slide-1.png' %});">
+                    <div class="container intro-content text-center">
+                        <h3 class="intro-subtitle text-white">Connecting Farmers</h3><!-- End .h3 intro-subtitle -->
+                        <h1 class="intro-title text-white">with buyers</h1><!-- End .intro-title -->
+
+                        <a href="category.html" class="btn btn-outline-white-4">
+                            <span>Join DigiHarvest</span>
+                        </a>
+                    </div><!-- End .intro-content -->
+                </div><!-- End .intro-slide -->
+
+                <div class="intro-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0,
+                        0, 0.75)),url({% static 'assets/images/demos/demo-6/slider/slide-2.jpg' %});">
+                    <div class="container intro-content text-center">
+                        <h3 class="intro-subtitle text-white">Streamlining</h3><!-- End .h3 intro-subtitle -->
+                        <h1 class="intro-title text-white">the supply chain</h1><!-- End .intro-title -->
+
+                        <a href="category.html" class="btn btn-outline-white-4">
+                            <span>Join DigiHarvest</span>
+                        </a>
+                    </div><!-- End .intro-content -->
+                </div><!-- End .intro-slide -->
+            </div><!-- End .intro-slider owl-carousel owl-theme -->
+
+            <span class="slider-loader"></span><!-- End .slider-loader -->
+        </div><!-- End .intro-slider-container -->
+
+        <!-- Top Feature Start -->
+        <div class="container-fluid top-feature py-5 pt-lg-0 p-md-5 p-sm-5">
+            <div class="container py-5 pt-lg-0">
+                <div class="row gx-0">
+                    <!-- First Feature -->
+                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                    <i class="fa fa-leaf text-primary"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <h4>Transparent Pricing</h4>
+                                    <span>Fair and transparent pricing for both farmers and buyers.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second Feature -->
+                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                    <i class="fa fa-hands-helping text-primary"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <h4>Dedicated Support</h4>
+                                    <span>Our team is here to assist you every step of the way.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third Feature -->
+                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                    <i class="fa fa-clock text-primary"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <h4>Always Available</h4>
+                                    <span>Access the platform anytime, anywhere, with 24/7 availability.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Feature End -->
+
+        <!-- About Start -->
+        <div class="container-xxl py-5 p-md-5 p-sm-5">
+            <div class="container">
+                <div class="row g-5 align-items-end">
+                    <!-- Image Section -->
+                    <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded" data-wow-delay="0.1s"
+                             src="{% static "assets/images/about/about.png" %}"
+                             alt="About DigiHarvest">
+                    </div>
+                    <!-- Main Text Section -->
+                    <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
+                        <h1 class="display-1 text-primary mb-0">1</h1>
+                        <p class="text-primary mb-4">Year of Innovation</p>
+                        <h1 class="display-5 mb-4">Empowering Farmers, Transforming Agriculture</h1>
+                        <p class="mb-4">
+                            At DigiHarvest, we connect farmers to a wider market through a seamless platform designed to
+                            optimize the agricultural supply chain. With innovative tools, real-time updates and
+                            transparent
+                            trading, we ensure both farmers and buyers thrive. Join us in transforming agriculture and
+                            empowering communities.
+                        </p>
+                    </div>
+                    <!-- Feature Highlights Section -->
+                    <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row g-5">
+                            <!-- First Feature -->
+                            <div class="col-12 col-sm-6 col-lg-12">
+                                <div class="border-start ps-4">
+                                    <i class="fa fa-seedling fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">Innovative Solutions</h4>
+                                    <span>Using the latest technology to bridge gaps in agriculture and create efficient marketplaces.</span>
+                                </div>
+                            </div>
+                            <!-- Second Feature -->
+                            <div class="col-12 col-sm-6 col-lg-12">
+                                <div class="border-start ps-4">
+                                    <i class="fa fa-handshake fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">Trusted Partnerships</h4>
+                                    <span>Building strong relationships between farmers, buyers and agricultural stakeholders.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About End -->
+
+        <!-- Facts Start -->
+        <div class="container-fluid facts my-5 py-5" data-parallax="scroll"
+             data-image-src="assets/images/facts-background.jpg">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                        <h1 class="display-4 text-white" data-toggle="counter-up">1200</h1>
+                        <span class="fs-5 fw-semi-bold text-light">Happy Clients</span>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                        <h1 class="display-4 text-white" data-toggle="counter-up">3000</h1>
+                        <span class="fs-5 fw-semi-bold text-light">Orders Completed</span>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="display-4 text-white" data-toggle="counter-up">200</h1>
+                        <span class="fs-5 fw-semi-bold text-light">Distributors</span>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                        <h1 class="display-4 text-white" data-toggle="counter-up">12</h1>
+                        <span class="fs-5 fw-semi-bold text-light">Awards Achieved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facts End -->
+
+
+        <!-- Features Start -->
+        <div class="container-xxl py-5 p-md-5 p-sm-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <!-- Text Content -->
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <p class="fs-5 fw-bold text-primary">Why Choose DigiHarvest</p>
+                        <h1 class="display-5 mb-4">Empowering Farmers, Transforming Agriculture</h1>
+                        <p class="mb-4">
+                            DigiHarvest is your trusted partner in creating sustainable, efficient and profitable
+                            agricultural
+                            ecosystems. With innovative solutions, transparent processes and a commitment to bridging
+                            the gap
+                            between farmers and buyers, we ensure your agricultural needs are met seamlessly.
+                        </p>
+                    </div>
+                    <!-- Features Section -->
+                    <div class="col-lg-6 p-md-5 p-sm-5">
+                        <div class="row g-4 align-items-center">
+                            <!-- First Column -->
+                            <div class="col-md-6">
+                                <div class="row g-4">
+                                    <!-- Feature 1 -->
+                                    <div class="col-12 wow fadeIn mb-md-2" data-wow-delay="0.3s">
+                                        <div class="text-center rounded py-5 px-4"
+                                             style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                                 style="width: 90px; height: 90px;">
+                                                <i class="fa fa-seedling fa-3x text-primary"></i>
+                                            </div>
+                                            <h4 class="mb-0">Sustainable Practices</h4>
+                                        </div>
+                                    </div>
+                                    <!-- Feature 2 -->
+                                    <div class="col-12 wow fadeIn mt-md-2" data-wow-delay="0.5s">
+                                        <div class="text-center rounded py-5 px-4"
+                                             style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                                 style="width: 90px; height: 90px;">
+                                                <i class="fa fa-handshake fa-3x text-primary"></i>
+                                            </div>
+                                            <h4 class="mb-0">Trusted Connections</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Second Column -->
+                            <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="text-center rounded py-5 px-4"
+                                     style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                    <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                         style="width: 90px; height: 90px;">
+                                        <i class="fa fa-chart-line fa-3x text-primary"></i>
+                                    </div>
+                                    <h4 class="mb-0">Data-Driven Insights</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+
+        <div class="mb-5"></div><!-- End .mb-5 -->
+        <div class="container">
+            <div class="heading heading-center mb-3">
+                <h2 class="title">Trending Products</h2><!-- End .title -->
+
+                <ul class="nav nav-pills justify-content-center" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="trending-all-link" data-toggle="tab" href="#trending-all-tab"
+                           role="tab" aria-controls="trending-all-tab" aria-selected="true">All</a>
+                    </li>
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" id="trending-women-link" data-toggle="tab" href="#trending-women-tab"#}
+{#                           role="tab" aria-controls="trending-women-tab" aria-selected="false">Women</a>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" id="trending-men-link" data-toggle="tab" href="#trending-men-tab" role="tab"#}
+{#                           aria-controls="trending-men-tab" aria-selected="false">Men</a>#}
+{#                    </li>#}
+                </ul>
+            </div><!-- End .heading -->
+
+            {% include 'index-shop.html' %}
+        </div><!-- End .container -->
+
+        <div class="mb-5"></div><!-- End .mb-5 -->
+    </main><!-- End .main -->
+
+{% endblock %}
